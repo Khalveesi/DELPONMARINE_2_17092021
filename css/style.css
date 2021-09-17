@@ -1,3 +1,36 @@
 body{
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+   display: flex; 
+   justify-content: space-between;
+   height: 80px;
+   margin: 0px 50px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+}
+.nav a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav a:hover, .nav a:active{
+    color: #2078fd;
+}
+.nav a:hover{
+    font-weight: bold;
+}
+.nav a:active{
+    border-top: solid #2078fd 2px;
 }
