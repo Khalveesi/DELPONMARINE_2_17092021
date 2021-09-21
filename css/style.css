@@ -33,4 +33,38 @@ header{
 }
 .nav a:active{
     border-top: solid #2078fd 2px;
+    padding-top: 18px;
+}
+.titre {
+    padding-left: 50px;
+}
+.search{
+    display: flex;
+    margin-left: 50px;
+}
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px 0 0 5px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #F2F2F2;    
+}
+.text{
+    width: 230px;
+    height: 30px;
+    border: 1px solid #F2F2F2;
+}
+.button{
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    height: 30px;
+    width: 120px;
 }
