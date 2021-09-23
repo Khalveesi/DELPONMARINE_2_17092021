@@ -3,6 +3,15 @@
 }
 
 body{
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1{
+    margin: 10px 0;
+}
+
+p{
     margin: 0;
 }
 
@@ -12,14 +21,17 @@ header{
    height: 80px;
    margin: 0px 50px;
 }
+
 .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .nav{
     display: flex;
 }
+
 .nav a{
     display: flex;
     flex-direction: column;
@@ -32,20 +44,24 @@ header{
 .nav a:hover, .nav a:active{
     color: #2078fd;
 }
+
 .nav a:hover{
     font-weight: bold;
 }
+
 .nav a:active{
     border-top: solid #2078fd 2px;
     padding-top: 18px;
 }
-.titre {
-    padding-left: 50px;
+
+main{
+    margin: 0px 50px;
 }
+
 .search{
     display: flex;
-    margin-left: 50px;
     height: 48px;
+    margin: 30px 0;
 }
 
 .localisation{
@@ -80,4 +96,67 @@ header{
     padding: 0 15px;
     font-size: 17px;
     font-weight: 600;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.filter{
+    display: flex;
+    border: solid 2px #F2F2F2;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.filter div{
+    padding: 10px;
+    background-color: #deebff;
+    border-radius: 300px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    left: -1px;
+}
+
+.filter i{
+    color: #0065fc;
+}
+
+.filter:hover{
+    background-color: #deebff;
+    cursor: pointer;
+}
+
+.filter span{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.filters p{
+    font-weight: bold;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+}
+
+.information i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 2px solid #F2F2F2;
+    padding: 10px;
+    border-radius: 300px;
+    width: 5px;
+    height: 5px;
+    color: #0065FC;
+    font-size: 12px;
 }
