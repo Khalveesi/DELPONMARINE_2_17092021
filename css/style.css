@@ -258,6 +258,9 @@ a.show-more:hover, a.show-more:active {
 }
 
 .popularity{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
     background-color: #F2F2F2;
@@ -281,8 +284,8 @@ a.show-more:hover, a.show-more:active {
 
 .popular-carte{
     display: flex;
-    width: 340px;
-    height: 145px;
+    width: 325px;
+    height: 130px;
     padding: 5px 5px;
     border: 1px solid white;
     background-color: white;
@@ -300,4 +303,18 @@ a.show-more:hover, a.show-more:active {
 .popular-carte-content{
     display: flex;
     flex-direction: column;
+    padding: 20px;
+}
+
+.popular-title{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popular-description{
+    margin-bottom: 25px
+}
+
+.popular-price{
+    font-weight: bold;
 }
