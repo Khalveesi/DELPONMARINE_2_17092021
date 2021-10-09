@@ -41,15 +41,12 @@ header{
     padding: 20px;
 }
 
-.nav a:hover, .nav a:active{
+.nav a:hover{
     color: #2078fd;
 }
 
 .nav a:hover{
     font-weight: bold;
-}
-
-.nav a:active{
     border-top: solid #2078fd 2px;
     padding-top: 18px;
 }
@@ -145,6 +142,7 @@ main{
 .information{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .information i{
@@ -159,12 +157,12 @@ main{
     height: 5px;
     color: #0065FC;
     font-size: 12px;
-    margin-bottom: 30px;
 }
 
 .hebergement-container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 .hebergement{
     width: 845px;
@@ -257,7 +255,7 @@ a.show-more:hover, a.show-more:active {
     color: #0065FC;
 }
 
-.popularity{
+.popular{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -267,13 +265,13 @@ a.show-more:hover, a.show-more:active {
     padding: 25px 25px;
 }
 
-.popularity-header{
+.popular-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.popularity-header i{
+.popular-header i{
     font-size: 1.3em;
 }
 
@@ -317,4 +315,98 @@ a.show-more:hover, a.show-more:active {
 
 .popular-price{
     font-weight: bold;
+}
+
+.activity-container{
+    display: flex;
+    gap: 45px;
+}
+
+.activity-container div{
+    flex: 1;
+}
+
+.activity > h1{
+    margin-bottom: 27px;
+}
+
+.tall-activity{
+    flex: 1;
+}
+
+.article-activity{
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18);
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mt-2
+{
+    margin-top:25px;
+}
+
+.small-activity{
+    flex: 1;
+}
+
+.tall-vignette{
+    height: 387px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 15px;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.activity-description{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+.small-vignette{
+    height: 150px;
+    max-width: 300px;
+    margin-bottom: 15px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+footer{
+    margin-top: 50px;   
+    position: absolute;
+    padding:50px 0;
+    left: 0;
+    right: 0;
+    background-color: #F2F2F2;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: auto;    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3{
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color:#0065FC
 }
