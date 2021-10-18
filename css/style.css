@@ -16,12 +16,10 @@ p{
 }
 
 header{
-   display: flex; 
-   justify-content: space-between;
-   height: 80px;
-   margin: 0px 50px;
-}
-
+    display: flex; 
+    flex-wrap: wrap;
+ }
+ 
 .logo {
     display: flex;
     flex-direction: column;
@@ -30,9 +28,16 @@ header{
 
 .nav{
     display: flex;
+
 }
 
-.nav a{
+.sign-up{
+    display: flex;
+    font-weight: bold;
+    color: #2078fd;
+}
+
+header a{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,20 +50,16 @@ header{
     color: #2078fd;
 }
 
-.nav a:hover{
+.nav a:hover, .nav a:active{
     font-weight: bold;
-    border-top: solid #2078fd 2px;
     padding-top: 18px;
-}
-
-main{
-    margin: 0px 50px;
 }
 
 .search{
     display: flex;
     height: 48px;
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .localisation{
@@ -88,24 +89,30 @@ main{
 .button{
     border: 1px solid #0065FC;
     background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
     color: white;
     padding: 0 15px;
     font-size: 17px;
     font-weight: 600;
 }
+.filters-section{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.filters-section p{
+    font-weight: bold;
+}
 
 .filters{
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .filter{
     display: flex;
     border: solid 2px #F2F2F2;
     border-radius: 20px;
-    margin-left: 25px;
+    
 }
 
 .filter div{
@@ -135,10 +142,6 @@ main{
     font-weight: bold;
 }
 
-.filters p{
-    font-weight: bold;
-}
-
 .information{
     display: flex;
     align-items: center;
@@ -164,13 +167,6 @@ main{
     justify-content: space-between;
     margin-bottom: 60px;
 }
-.hebergement{
-    width: 845px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    background-color: #F2F2F2;
-    padding: 25px 25px;
-}
 
 .hebergement h1{
     padding-bottom: 15px;
@@ -180,14 +176,11 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(245px,1fr));
     grid-gap: 30px;
-    margin: 25px 25px;
     }
 
 .carte{
     display: flex;
-    flex-direction: column;
-    width: 245px;
-    height: 200px;
+    flex-direction: column;    
     padding: 0 5px;
     padding-top: 5px;
     border: 1px solid white;
@@ -245,24 +238,21 @@ main{
     color: #0065FC;
 }
 
-.show-more{
+.show-more a{
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-a.show-more:hover, a.show-more:active {
+.show-more a:hover, .show-more a:active {
     color: #0065FC;
 }
 
 .popular{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border: 1px solid #F2F2F2;
-    border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 25px 25px;
 }
 
 .popular-header{
@@ -273,6 +263,11 @@ a.show-more:hover, a.show-more:active {
 
 .popular-header i{
     font-size: 1.3em;
+}
+
+.popular-cartes{
+    display: flex;
+    flex: 1;
 }
 
 .popular-container{
@@ -320,10 +315,15 @@ a.show-more:hover, a.show-more:active {
 .activity-container{
     display: flex;
     gap: 45px;
+    flex-wrap: wrap;
+
 }
 
 .activity-container div{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
 }
 
 .activity > h1{
@@ -337,9 +337,9 @@ a.show-more:hover, a.show-more:active {
 .article-activity{
     border-radius: 20px;
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18);
-    max-width: 300px;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .mt-2
@@ -352,10 +352,8 @@ a.show-more:hover, a.show-more:active {
 }
 
 .tall-vignette{
-    height: 387px;
     border-radius: 20px 20px 0 0;
     margin-bottom: 15px;
-    max-width: 300px;
     object-fit: cover;
 }
 
@@ -365,11 +363,8 @@ a.show-more:hover, a.show-more:active {
     padding-bottom: 30px;
 }
 
-
-
 .small-vignette{
     height: 150px;
-    max-width: 300px;
     margin-bottom: 15px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -409,4 +404,158 @@ footer a{
 
 footer a:hover{
     color:#0065FC
+}
+
+  /* mobile */
+@media only screen and (max-width: 768px) {
+    .logo{
+        margin-left: 20px;
+    }
+    .nav {
+        order: 2;
+        flex: 1 0 100%;
+    }
+    .nav a{
+        flex: 1;
+        text-align: center;
+        border-bottom: solid #F2F2F2 2px;
+    }
+    .nav a:hover{
+        border-bottom: solid #2078fd 2px;
+    }
+    .sign-up{
+        margin-left: auto;
+    }
+    .titre, .search, .filters-section, .information, .activity{
+        margin: 15px 20px;
+    }
+    .hide-mobile{
+        display: none !important;
+    }
+    .button{
+        border-radius: 15px;
+        position: relative;
+        left: -15px;
+    }
+    .text{
+        flex: 1;
+    }
+    .filters-section{
+        flex-direction: column;
+    }
+    .filter{
+        margin: 10px 10px 0 0;
+    }
+    .hebergement-container{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .hebergement{
+        order: 2;
+    }
+    .hebergement>h1 {
+        margin: 20px 0 0 20px;
+    }
+    .cartes-container{
+        padding: 10px 10px;
+    }
+    .carte{
+        flex: 1;
+        padding-bottom: 5px;
+    }
+    .show-more{
+        margin: 10px 0 0 20px;
+    }
+    .popular-header{
+        padding:0 20px;
+    }
+    .popular-cartes{
+        flex-wrap: wrap;
+    }
+    .popular-carte{
+        margin: 10px 0px 10px 20px;
+    }
+    .tall-vignette{
+        height: 150px;
+    }
+    .tall-activity, .activity-container div{
+        flex: 1 0 100%;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 769px) {
+    header{
+        height: 80px;
+        margin: 0px 50px;
+    }
+    .nav {
+        margin-left: auto;
+    }
+    .nav a:hover{
+        border-top: solid #2078fd 2px;
+    }
+    main{
+        margin: 0px 50px;
+    }
+    .hide-desktop{
+        display: none !important;
+    }
+    .button{
+        border-radius: 0 15px 15px 0;
+    }
+    .filters-section{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .filter{
+        margin-left: 25px;
+    }
+    .hebergement{
+        width: 845px;
+        border: 1px solid #F2F2F2;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        padding: 25px 25px;
+    }
+    .cartes-container{
+        margin: 25px 25px;
+    }
+    .carte{
+        width: 245px;
+        height: 200px;
+    }
+    .popular{
+        border-radius: 20px;
+        padding: 25px 25px;
+
+    }
+    .popular-cartes{
+        margin-top: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .article-activity{
+    max-width: 300px;
+    }
+    .tall-vignette{
+    height: 387px;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 769px){
+    .popular{
+        flex: 1 0 100%;
+        margin-top: 20px;
+    }
+    .popular-cartes{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .hebergement{
+        width: initial;
+    }
+    .hebergement-container{
+        flex-direction: column;
+    }
 }
