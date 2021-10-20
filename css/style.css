@@ -1,10 +1,9 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
 body{
     max-width: 1440px;
-    margin: auto;
+    margin: 0;
 }
 
 h1{
@@ -186,7 +185,6 @@ header a{
     border: 1px solid white;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18); 
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18);
 }
 
@@ -283,7 +281,6 @@ header a{
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18); 
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18);
 }
 
@@ -407,7 +404,7 @@ footer a:hover{
 }
 
   /* mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
     .logo{
         margin-left: 20px;
     }
@@ -425,6 +422,7 @@ footer a:hover{
     }
     .sign-up{
         margin-left: auto;
+        margin-right: 20px;
     }
     .titre, .search, .filters-section, .information, .activity{
         margin: 15px 20px;
@@ -471,9 +469,10 @@ footer a:hover{
     }
     .popular-cartes{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .popular-carte{
-        margin: 10px 0px 10px 20px;
+        margin: 10px 10px 10px 10px;
     }
     .tall-vignette{
         height: 150px;
@@ -484,7 +483,10 @@ footer a:hover{
 }
 
 /* desktop */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 869px) {
+    body {
+        margin: auto;
+    }
     header{
         height: 80px;
         margin: 0px 50px;
@@ -508,8 +510,11 @@ footer a:hover{
         flex-wrap: wrap;
         align-items: center;
     }
+    .filters-section p{
+        margin: 0 25px 15px 0;
+    }
     .filter{
-        margin-left: 25px;
+        margin: 0 15px 15px 0;
     }
     .hebergement{
         width: 845px;
@@ -535,27 +540,31 @@ footer a:hover{
         justify-content: space-between;
         flex-direction: column;
     }
+    .activity-container > div{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
     .article-activity{
     max-width: 300px;
+    min-width: 300px;
     }
     .tall-vignette{
     height: 387px;
     }
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 769px){
+@media only screen and (min-width: 869px) and (max-width: 1400px) {
     .popular{
-        flex: 1 0 100%;
-        margin-top: 20px;
+        margin-left: 20px;
     }
     .popular-cartes{
-        flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    .hebergement{
-        width: initial;
+    .popular-carte{
+        margin-top: 30px;
     }
-    .hebergement-container{
-        flex-direction: column;
+
+    .small-activity{
+        height: 215px;
     }
 }
