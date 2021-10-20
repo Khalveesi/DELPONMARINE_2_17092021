@@ -1,0 +1,570 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    max-width: 1440px;
+    margin: 0;
+}
+
+h1{
+    margin: 10px 0;
+}
+
+p{
+    margin: 0;
+}
+
+header{
+    display: flex; 
+    flex-wrap: wrap;
+ }
+ 
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+
+}
+
+.sign-up{
+    display: flex;
+    font-weight: bold;
+    color: #2078fd;
+}
+
+header a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav a:hover{
+    color: #2078fd;
+}
+
+.nav a:hover, .nav a:active{
+    font-weight: bold;
+    padding-top: 18px;
+}
+
+.search{
+    display: flex;
+    height: 48px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    width: 20px;
+    padding: 0 15px;
+    font-size: 1em;
+    text-align: center;
+    background-color: #F2F2F2;    
+}
+
+.text{
+    width: 230px;
+    border: 1px solid #F2F2F2;
+    padding: 0 20px;
+    outline: none;
+}
+
+.text:focus{
+    border: 1px solid #E0E0E0;
+}
+
+.button{
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.filters-section{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.filters-section p{
+    font-weight: bold;
+}
+
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter{
+    display: flex;
+    border: solid 2px #F2F2F2;
+    border-radius: 20px;
+    
+}
+
+.filter div{
+    padding: 10px;
+    background-color: #deebff;
+    border-radius: 300px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    left: -1px;
+}
+
+.filter i{
+    color: #0065fc;
+}
+
+.filter:hover{
+    background-color: #deebff;
+    cursor: pointer;
+}
+
+.filter span{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.information i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 2px solid #F2F2F2;
+    padding: 10px;
+    border-radius: 300px;
+    width: 5px;
+    height: 5px;
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.hebergement-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.hebergement h1{
+    padding-bottom: 15px;
+}
+
+.cartes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px,1fr));
+    grid-gap: 30px;
+    }
+
+.carte{
+    display: flex;
+    flex-direction: column;    
+    padding: 0 5px;
+    padding-top: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18);
+}
+
+.carte .vignette{
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+.carte .carte-title{
+    padding-bottom: 8px;
+    padding-left: 8px;
+    font-weight: bold;
+}
+
+.carte .carte-description {
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+
+.carte .price{
+    font-weight: bold;
+}
+
+.note{
+    padding-left: 8px;
+    color: #d9d9d9;
+    font-size: 0.8em;
+}
+
+.rating-1 > i:nth-child(-n+1){
+    color: #0065FC;
+}
+
+.rating-2 > i:nth-child(-n+2){
+    color: #0065FC;
+}
+
+.rating-3 > i:nth-child(-n+3){
+    color: #0065FC;
+}
+
+.rating-4 > i:nth-child(-n+4){
+    color: #0065FC;
+}
+
+.rating-5 > i:nth-child(-n+5){
+    color: #0065FC;
+}
+
+.show-more a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.show-more a:hover, .show-more a:active {
+    color: #0065FC;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+}
+
+.popular-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-header i{
+    font-size: 1.3em;
+}
+
+.popular-cartes{
+    display: flex;
+    flex: 1;
+}
+
+.popular-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.popular-carte{
+    display: flex;
+    width: 325px;
+    height: 130px;
+    padding: 5px 5px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18);
+}
+
+.popular-carte .popular-vignette{
+    width: 125px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.popular-carte-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.popular-title{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popular-description{
+    margin-bottom: 25px
+}
+
+.popular-price{
+    font-weight: bold;
+}
+
+.activity-container{
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+
+}
+
+.activity-container div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.activity > h1{
+    margin-bottom: 27px;
+}
+
+.tall-activity{
+    flex: 1;
+}
+
+.article-activity{
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.mt-2
+{
+    margin-top:25px;
+}
+
+.small-activity{
+    flex: 1;
+}
+
+.tall-vignette{
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.activity-description{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.small-vignette{
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+footer{
+    margin-top: 50px;   
+    position: absolute;
+    padding:50px 0;
+    left: 0;
+    right: 0;
+    background-color: #F2F2F2;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: auto;    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3{
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color:#0065FC
+}
+
+  /* mobile */
+@media only screen and (max-width: 868px) {
+    .logo{
+        margin-left: 20px;
+    }
+    .nav {
+        order: 2;
+        flex: 1 0 100%;
+    }
+    .nav a{
+        flex: 1;
+        text-align: center;
+        border-bottom: solid #F2F2F2 2px;
+    }
+    .nav a:hover{
+        border-bottom: solid #2078fd 2px;
+    }
+    .sign-up{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .titre, .search, .filters-section, .information, .activity{
+        margin: 15px 20px;
+    }
+    .hide-mobile{
+        display: none !important;
+    }
+    .button{
+        border-radius: 15px;
+        position: relative;
+        left: -15px;
+    }
+    .text{
+        flex: 1;
+    }
+    .filters-section{
+        flex-direction: column;
+    }
+    .filter{
+        margin: 10px 10px 0 0;
+    }
+    .hebergement-container{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .hebergement{
+        order: 2;
+    }
+    .hebergement>h1 {
+        margin: 20px 0 0 20px;
+    }
+    .cartes-container{
+        padding: 10px 10px;
+    }
+    .carte{
+        flex: 1;
+        padding-bottom: 5px;
+    }
+    .show-more{
+        margin: 10px 0 0 20px;
+    }
+    .popular-header{
+        padding:0 20px;
+    }
+    .popular-cartes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .popular-carte{
+        margin: 10px 10px 10px 10px;
+    }
+    .tall-vignette{
+        height: 150px;
+    }
+    .tall-activity, .activity-container div{
+        flex: 1 0 100%;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 869px) {
+    body {
+        margin: auto;
+    }
+    header{
+        height: 80px;
+        margin: 0px 50px;
+    }
+    .nav {
+        margin-left: auto;
+    }
+    .nav a:hover{
+        border-top: solid #2078fd 2px;
+    }
+    main{
+        margin: 0px 50px;
+    }
+    .hide-desktop{
+        display: none !important;
+    }
+    .button{
+        border-radius: 0 15px 15px 0;
+    }
+    .filters-section{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .filters-section p{
+        margin: 0 25px 15px 0;
+    }
+    .filter{
+        margin: 0 15px 15px 0;
+    }
+    .hebergement{
+        width: 845px;
+        border: 1px solid #F2F2F2;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        padding: 25px 25px;
+    }
+    .cartes-container{
+        margin: 25px 25px;
+    }
+    .carte{
+        width: 245px;
+        height: 200px;
+    }
+    .popular{
+        border-radius: 20px;
+        padding: 25px 25px;
+
+    }
+    .popular-cartes{
+        margin-top: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .activity-container > div{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .article-activity{
+    max-width: 300px;
+    min-width: 300px;
+    }
+    .tall-vignette{
+    height: 387px;
+    }
+}
+
+@media only screen and (min-width: 869px) and (max-width: 1400px) {
+    .popular{
+        margin-left: 20px;
+    }
+    .popular-cartes{
+        justify-content: flex-start;
+    }
+    .popular-carte{
+        margin-top: 30px;
+    }
+
+    .small-activity{
+        height: 215px;
+    }
+}
