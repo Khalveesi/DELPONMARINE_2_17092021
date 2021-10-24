@@ -167,8 +167,9 @@ header a{
     margin-bottom: 60px;
 }
 
-.hebergement h1{
+.hebergement h2{
     padding-bottom: 15px;
+    margin-left: 30px;
 }
 
 .cartes-container{
@@ -240,6 +241,7 @@ header a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+    margin-left: 30px;
 }
 
 .show-more a:hover, .show-more a:active {
@@ -316,14 +318,14 @@ header a{
 
 }
 
-.activity-container div{
+.activity-container > div{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 45px;
 }
 
-.activity > h1{
+.activity > h2{
     margin-bottom: 27px;
 }
 
@@ -377,8 +379,7 @@ footer{
 }
 
 .footer-container {
-    max-width: 1440px;
-    margin: auto;    
+    max-width: 1020px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -477,7 +478,7 @@ footer a:hover{
     .tall-vignette{
         height: 150px;
     }
-    .tall-activity, .activity-container div{
+    .tall-activity, .activity-container > div{
         flex: 1 0 100%;
     }
 }
@@ -553,6 +554,7 @@ footer a:hover{
     }
 }
 
+/* Tablette */
 @media only screen and (min-width: 869px) and (max-width: 1400px) {
     .popular{
         margin-left: 20px;
