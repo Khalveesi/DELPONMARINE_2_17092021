@@ -370,7 +370,7 @@ header a{
 }
 
 footer{
-    margin-top: 50px;   
+    margin-top: 50px;
     position: absolute;
     padding:50px 0;
     left: 0;
@@ -379,13 +379,17 @@ footer{
 }
 
 .footer-container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.element-container{
     max-width: 1020px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.footer-container div {
+.element-container div {
     margin: 0 50px;
     display: flex;
     flex-direction: column;
